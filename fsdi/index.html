@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananya's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #36d1dc, #5b86e5);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: white;
+      background: #ff6a00;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: #ee0979;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #ff4e50;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+      width: 500px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      margin: 15px 0 10px;
+      color: #2d3436;
+    }
+
+    .project-card p {
+      padding: 0 15px 20px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .about, .contact {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      color: white;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2d3436;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section --> 
+  <header>
+    <h1>🌸 Hi, I'm Ananya 🌸</h1>
+    <h2>From Code to Creativity — One Project at a Time 🎯</h2>
+    <a href="#projects">View My Work</a>
+  </header>
+
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>🚀 My Projects</h2>
+    <div class="projects">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images\skin.jpg" alt="Skin Disease Detection">
+        <h3>Skin Disease Detection</h3>
+        <p>Developed a deep learning-based CNN model using Keras & TensorFlow to detect various skin diseases. 
+            Built an interactive web app with image upload & prediction features.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images\rail.png" alt="RailShield IoT">
+        <h3>RailShield: IoT Safety System</h3>
+        <p>An IoT-based railway track monitoring & safety system integrating deep learning for fault detection, ensuring passenger safety and real-time alerts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>🙋 About Me</h2>
+    <div class="about">
+      <p>
+        Hello! I’m Ananya Hegde, a Web Developer and AI Enthusiast who has completed my Bachelor’s degree in Information Science and Engineering from Global Academy of Technology with a strong academic record. 
+        I am passionate about creating innovative solutions that merge technology with real-world applications. 
+        My work includes developing an AI-powered Skin Disease Detection system and RailShield – an IoT-based Railway Safety System, which was funded by KSCST. 
+        With hands-on experience in Python, Deep Learning, Web Development, SQL, and IoT systems, I focus on building impactful, user-friendly, and efficient solutions.
+         Beyond technology, I pursue my interests in dance,which keep me disciplined, creative, and socially connected. 
+         Looking ahead, I aspire to grow as a developer and researcher, contributing to AI, IoT, and digital innovations that make a positive difference.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>📞 Contact Me</h2>
+    <div class="contact">
+      <p>Feel free to connect with me:</p>
+      <a href="ananyahegde1303@gmail.com">Email Me</a>
+      <a href="https://www.linkedin.com/in/ananya-hegde-2a6371256/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/ananyahegde2003" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ananya | Made with ❤️ & HTML+CSS</p>
+  </footer>
+
+</body>
+</html>
